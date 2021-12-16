@@ -1,0 +1,1 @@
+*{padding:0;margin:0}.module-a,.module-b{aspect-ratio:3/1;display:grid;place-items:center}.module-a{background:#ff0;border:2px solid #32cd32;grid-template-areas:var(--grid-area)}.module-b{background:#ff69b4;border:2px solid red}

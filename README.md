@@ -5,4 +5,4 @@
 - Create a basic css library for use in components
 
 ## Preview
-Run `npm run preview`
+Run `npm install` and `npm run preview`

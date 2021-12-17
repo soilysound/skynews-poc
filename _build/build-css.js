@@ -18,7 +18,6 @@ module.exports = (file, options) => {
   return new Promise((resolve, reject) => {
     // css to be processed
     let css = fs.readFileSync(file, "utf8");
-  
     // process css
     postcss(plugins)
     .process(css, defaults)
@@ -26,7 +25,7 @@ module.exports = (file, options) => {
       resolve(result.css.toString());
     }).catch((err) => {
       console.log(err);
-      resolve('');
+      reject(err);
     })
   })
 }

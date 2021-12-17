@@ -4,6 +4,6 @@ export default async (root) => {
   }
   root.textContent = "This is module a";
 
-  const moduleB = await import('./module-b');
+  const moduleB = await import('./module-b.js');
   moduleB.default(root);
 }

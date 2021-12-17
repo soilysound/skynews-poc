@@ -1,6 +1,6 @@
 .flex-grid {
-    --gap: 1em;
-    --basis: auto;
+    --gap: var(--component-gap);
+    --basis: 100%;
     --wrap: wrap;
     --grow: 1;
     --collapse: 0;

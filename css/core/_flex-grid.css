@@ -24,18 +24,3 @@
 .flex-grid>*:only-child {
     flex-basis: var(--basis);
 }
-
-
-/* utilities */
-
-.align-start {
-    align-items: flex-start;
-}
-
-.align-end {
-    align-items: flex-end;
-}
-
-.align-center {
-    align-items: center;
-}

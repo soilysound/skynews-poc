@@ -1,6 +1,6 @@
 .flex-grid {
-    --gap: var(--component-gap);
     --basis: 100%;
+    --gap: var(--component-gap);
     --wrap: wrap;
     --grow: 1;
     --collapse: 0;
@@ -14,11 +14,15 @@
 }
 
 .flex-grid>* {
-    background-color: pink;
+    outline: 1px solid red;
     flex-grow: var(--grow);
     flex-shrink: 1;
     flex-basis: calc(var(--basis) - var(--gap));
     min-width: clamp( var(--min-width, 0px), (var(--collapse) - 100%) * 999, 100% - var(--gap));
+}
+
+.flex-grid>*:only-child {
+    flex-basis: var(--basis);
 }
 
 

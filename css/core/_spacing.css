@@ -2,8 +2,8 @@
     --gap-0: 0;
     --gap-100: clamp(0.5rem, 0.5rem + (12 - 8) * ((100vw - 400px) / (1000 - 400)), 0.75rem);
     --gap-200: clamp(0.75rem, 0.75rem + (18 - 12) * ((100vw - 400px) / (1000 - 400)), 1.125rem);
-    --gap-300: 18 - 24px;
-    --gap-400: 24 - 30px;
+    --gap-300: clamp(1.125rem, 1.125rem + (24 - 18) * ((100vw - 400px) / (1000 - 400)), 1.5rem);
+    --gap-400: clamp(1.5rem, 1.5rem + (30 - 24) * ((100vw - 400px) / (1000 - 400)), 1.875rem);
     --gap-500: 30 - 38px;
     --gap-600: 38 - 50px;
     --gap-700: 50 - 62px;
@@ -22,7 +22,7 @@
     --component-padding-loose: var(--gap-400);
     --component-margin-tight: var(--gap-300);
     --component-margin: var(--gap-400);
-    --component-margin-lose: var(--gap-500);
+    --component-margin-loose: var(--gap-500);
     --group-margin-tight: var(--gap-600);
     --group-margin: var(--gap-700);
     --group-margin-loose: var(--gap-800);

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- this would be inlined -->
+    <script src="./js/head/module-loader.js"></script>
+    <!-- this would be inline -->
+    <style>
+        .cell {
+            aspect-ratio: 5/1;
+        }
+        
+        .header {
+            background: #aaa
+        }
+    </style>
+</head>
+
+<body class="wrap">
+    <header class="header flex-grid">
+        <div class="logo">logo</div>
+    </header>
+    <main class="wrap wrap-site-width" style="--wrap-gap: 4em;">
+        <div class="wrap wrap-gutter">
+            <h1>TOP STORIES</h1>
+            <div class="flex-grid wrap-gutter-collapse" style="--basis: 250px;">
+                <div class="cell" style="--basis: 100%">1</div>
+                <div class="cell">2</div>
+                <div class="cell">3</div>
+                <div class="cell">4</div>
+                <div class="cell">5</div>
+                <div class="cell">6</div>
+                <div class="cell">7</div>
+            </div>
+        </div>
+        <div class="wrap wrap-gutter">
+            <h1>MORE STORIES</h1>
+            <div class="flex-grid" style="--basis: 250px">
+                <div class="cell">1</div>
+                <div class="cell">2</div>
+                <div class="cell">3</div>
+                <div class="cell">4</div>
+                <div class="cell">5</div>
+                <div class="cell">6</div>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+</body>
+
+</html>

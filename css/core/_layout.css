@@ -11,6 +11,7 @@
     --wrap-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 100%;
     max-width: var(--wrap-width);
     gap: var(--wrap-gap);
@@ -39,4 +40,11 @@
     border: 2px solid red;
     margin-left: max(var(--wrap-gutter) * -1, min(0px, (100vw - var(--wrap-gutter-collapse)) * 9999));
     margin-right: max(var(--wrap-gutter) * -1, min(0px, (100vw - var(--wrap-gutter-collapse)) * 9999));
+}
+
+.wrap-full-width {
+    min-width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }

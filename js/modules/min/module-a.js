@@ -1,1 +1,23 @@
-var e=async e=>{if(!e)return;e.textContent="This is module a";const o=await Promise.resolve().then((function(){return t}));console.log(o),o.default(e)},t=Object.freeze({__proto__:null,default:e=>{e&&(e.textContent="This is module b",e.style.cssText="border: 4px solid red")}});export{e as default};
+var moduleA = async (root) => {
+  if(!root) {
+    return;
+  }
+  root.textContent = "This is module a";
+
+  const moduleB = await Promise.resolve().then(function () { return moduleB$1; });
+  moduleB.default(root);
+};
+
+var moduleB = (root) => {
+  if(!root) {
+    return;
+  }
+  root.textContent = "This is module b";
+};
+
+var moduleB$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': moduleB
+});
+
+export { moduleA as default };
